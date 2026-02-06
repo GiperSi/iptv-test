@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="IPTV Test Suite — UI Stress Test" generator-info-url="https://github.com/gipersi/iptv-test">
+<!-- 
+  ВАЖНО: Этот файл нужно сжать в test_epg.xml.gz
+  Команда: gzip -c test_epg.xml > test_epg.xml.gz
+-->
+
+  <!-- ========== ALBANIA ========== -->
+  <channel id="Syri.TV.al">
+    <display-name lang="sq">Syri TV</display-name>
+    <icon src="https://vimg.ipko.tv/logo/color/syritv.png"/>
+  </channel>
+
+  <!-- Syri TV - полный день -->
+  <programme start="20250206000000 +0000" stop="20250206060000 +0000" channel="Syri.TV.al">
+    <title lang="sq">Nata me Syri</title>
+    <desc lang="sq">Programe të natës: lajme, muzikë.</desc>
+    <category lang="sq">Natë</category>
+  </programme>
+  
+  <programme start="20250206060000 +0000" stop="20250206100000 +0000" channel="Syri.TV.al">
+    <title lang="sq">Syri i Mëngjesit</title>
+    <desc lang="sq">Lajme të mëngjesit dhe informacione për motin.</desc>
+    <category lang="sq">Mëngjes</category>
+  </programme>
+  
+  <programme start="20250206100000 +0000" stop="20250206140000 +0000" channel="Syri.TV.al">
+    <title lang="sq"></title>
+    <desc lang="sq"></desc>
+    <category lang="sq">Test: Пустые заголовок и описание</category>
+  </programme>
+  
+  <programme start="20250206140000 +0000" stop="20250206180000 +0000" channel="Syri.TV.al">
+    <title lang="sq">Dita e Gjate 📺🔥🎬ПаТестОченьДлинноеНазваниеБезПробеловДляПроверкиUI</title>
+    <desc lang="sq">ОченьДлинноеОписаниеБезПробеловДляТестаПереносаТекстаВИнтерфейсеавыаывдвплщавоплщвопавлпоывалпаволдыжвоавлыаоавылдаволовладпоавлдпоавлпавоплдыопалпоавлпоавплдавыоплаыопадвлпоавылпоаплавоплавопавлпоавдлпоалпаоплвопавлпоыплавопжопалжпоавлпжы</desc>
+    <category lang="sq">Тест UI</category>
+  </programme>
+  
+  <programme start="20250206180000 +0000" stop="20250206220000 +0000" channel="Syri.TV.al">
+    <title lang="sq">Studio e Mbrëmjes с тегами &lt;b&gt; &amp; "кавычки"</title>
+    <desc lang="sq">Debat me <strong>ekspertë</strong> mbi çështjet aktuale. Тег &lt;html&gt; &amp; амперсанд "кавычки" 'апостроф'. Эмодзи: 👨‍💻🌍✅</desc>
+    <category lang="sq">Debat</category>
+  </programme>
+  
+  <programme start="20250206220000 +0000" stop="20250207000000 +0000" channel="Syri.TV.al">
+    <title lang="sq">Fundjavë Me Argëtim</title>
+    <desc lang="sq">Filma dhe seriale për fund të javës.</desc>
+    <category lang="sq">Filma</category>
+  </programme>
+
+  <channel id="Test.Channel">
+    <display-name lang="sq">Test Channel (Albania)</display-name>
+    <icon src="https://example.com/test.png"/>
+  </channel>
+  
+  <programme start="20250206000000 +0000" stop="20250207000000 +0000" channel="Test.Channel">
+    <title lang="sq">Test 24/7</title>
+    <desc lang="sq">Тестовый канал с круглосуточным вещанием для проверки UI.</desc>
+    <category lang="sq">Тест</category>
+  </programme>
+
+  <!-- ========== BELARUS ========== -->
+  <channel id="Belarus1.by">
+    <display-name lang="ru">Беларусь 1</display-name>
+    <display-name lang="be">Беларусь 1</display-name>
+    <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Belarus_1_logo.svg/742px-Belarus_1_logo.svg.png"/>
+  </channel>
+
+  <!-- Беларусь 1 - полный день -->
+  <programme start="20250206000000 +0300" stop="20250206060000 +0300" channel="Belarus1.by">
+    <title lang="ru">Ночной эфир</title>
+    <desc lang="ru">Повторы программ, фильмы, музыка.</desc>
+    <category lang="ru">Ночь</category>
+  </programme>
+  
+  <programme start="20250206060000 +0300" stop="20250206090000 +0300" channel="Belarus1.by">
+    <title lang="ru">Доброе утро, Беларусь!</title>
+    <desc lang="ru">Утренняя информационно-развлекательная программа.</desc>
+    <category lang="ru">Утро</category>
+  </programme>
+  
+  <programme start="20250206090000 +0300" stop="20250206120000 +0300" channel="Belarus1.by">
+    <title lang="ru">Утренний эфир</title>
+    <desc lang="ru">Новости, погода, интервью. Нормальное описание средней длины.</desc>
+    <category lang="ru">Информация</category>
+  </programme>
+  
+  <programme start="20250206120000 +0300" stop="20250206150000 +0300" channel="Belarus1.by">
+    <title lang="ru">Дневной марафон</title>
+    <desc lang="ru">Это очень длинное описание, предназначенное для проверки того, как пользовательский интерфейс обрабатывает многострочные тексты, автоматическое сворачивание, наличие кнопок "Подробнее", переносы строк, обрезку и другие аспекты отображения большого объёма текстовой информации в ограниченном пространстве виджета программы передач. Текст может содержать специальные символы: &amp;, &lt;, &gt;, кавычки " и ', а также эмодзи: 👨‍💻🌍✅. Это важно для обеспечения корректной работы приложения на разных устройствах и разрешениях экрана.</desc>
+    <category lang="ru">Марафон</category>
+  </programme>
+  
+  <programme start="20250206150000 +0300" stop="20250206180000 +0300" channel="Belarus1.by">
+    <title lang="ru">Спортивный день</title>
+    <desc lang="ru">Обзор спортивных событий, трансляции, интервью со спортсменами.</desc>
+    <category lang="ru">Спорт</category>
+  </programme>
+  
+  <programme start="20250206180000 +0300" stop="20250206210000 +0300" channel="Belarus1.by">
+    <title lang="ru">Вечерние новости с длинным названием для теста UI и переноса строк</title>
+    <desc lang="ru">Главные новости дня, анализ событий, комментарии экспертов.</desc>
+    <category lang="ru">Новости</category>
+  </programme>
+  
+  <programme start="20250206210000 +0300" stop="20250206230000 +0300" channel="Belarus1.by">
+    <title lang="ru">Художественный фильм</title>
+    <desc lang="ru">Драма "Возвращение домой". Премьерный показ.</desc>
+    <category lang="ru">Кино</category>
+  </programme>
+  
+  <programme start="20250206230000 +0300" stop="20250207000000 +0300" channel="Belarus1.by">
+    <title lang="ru">Вечерний концерт</title>
+    <desc lang="ru">Выступление белорусских исполнителей.</desc>
+    <category lang="ru">Музыка</category>
+  </programme>
+
+  <channel id="STV.by">
+    <display-name lang="ru">СТВ</display-name>
+    <display-name lang="be">СТВ</display-name>
+    <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg/640px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg.png"/>
+  </channel>
+
+  <!-- СТВ - полный день -->
+  <programme start="20250206000000 +0300" stop="20250206080000 +0300" channel="STV.by">
+    <title lang="ru">Ночное вещание</title>
+    <desc lang="ru">Документальные фильмы, повторы программ.</desc>
+    <category lang="ru">Ночь</category>
+  </programme>
+  
+  <programme start="20250206080000 +0300" stop="20250206110000 +0300" channel="STV.by">
+    <title lang="ru">Утро на СТВ</title>
+    <desc lang="ru">Информационно-развлекательное шоу для всей семьи.</desc>
+    <category lang="ru">Утро</category>
+  </programme>
+  
+  <programme start="20250206110000 +0300" stop="20250206140000 +0300" channel="STV.by">
+    <title lang="ru">ОченьДлинноеНазваниеБезПробеловИСЭмодзи📺🔥🎬📡📡📡📡</title>
+    <desc lang="ru">Короткое описание.</desc>
+    <category lang="ru">Тест UI</category>
+  </programme>
+  
+  <programme start="20250206140000 +0300" stop="20250206170000 +0300" channel="STV.by">
+    <title lang="ru">Документальный сериал</title>
+    <desc lang="ru">Эпизод о Полоцком княжестве и истории Беларуси.</desc>
+    <category lang="ru">Документалистика</category>
+  </programme>
+  
+  <programme start="20250206170000 +0300" stop="20250206200000 +0300" channel="STV.by">
+    <title lang="ru">Спецвыпуск новостей</title>
+    <desc lang="ru">Анализ основных событий дня с приглашенными экспертами и комментариями.</desc>
+    <category lang="ru">Новости</category>
+  </programme>
+  
+  <programme start="20250206200000 +0300" stop="20250206230000 +0300" channel="STV.by">
+    <title lang="ru">Вечерний фильм (премьера)</title>
+    <desc lang="ru">Новый белорусский фильм "Дорога домой".</desc>
+    <category lang="ru">Кино</category>
+  </programme>
+  
+  <programme start="20250206230000 +0300" stop="20250207000000 +0300" channel="STV.by">
+    <title lang="ru">Ночное ретро</title>
+    <desc lang="ru">Классика советского и белорусского кино.</desc>
+    <category lang="ru">Ретро</category>
+  </programme>
+
+  <!-- Тестовые каналы -->
+  <channel id="Duplicate.ID">
+    <display-name lang="ru">Тестовый канал (дубликат)</display-name>
+  </channel>
+  
+  <programme start="20250206100000 +0000" stop="20250206120000 +0000" channel="Duplicate.ID">
+    <title lang="ru">Программа для дубликата</title>
+    <desc lang="ru">Эта программа покажется на двух каналах с одинаковым tvg-id.</desc>
+    <category lang="ru">Тест</category>
+  </programme>
+
+</tv>
