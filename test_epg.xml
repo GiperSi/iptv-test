@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tv generator-info-name="IPTV Test Suite — Full Day Coverage" generator-info-url="https://github.com/gipersi/iptv-test">
+<tv generator-info-name="IPTV Test Suite — Full Field Coverage & Time Variants" generator-info-url="https://github.com/gipersi/iptv-test">
 
-  <!-- === КАНАЛ: Syri TV (Albania, UTC) === -->
+  <!-- === КАНАЛ: Syri TV (UTC) === -->
   <channel id="Syri.TV.al">
     <display-name lang="sq">Syri TV</display-name>
     <icon src="https://vimg.ipko.tv/logo/color/syritv.png"/>
+    <url>http://www.ipko.com</url>
   </channel>
 
-  <programme start="20260206000000 +0000" stop="20260206080000 +0000" channel="Syri.TV.al">
-    <title lang="sq">Nata e Qetë</title>
-    <desc lang="sq">Transmetim i lajmeve të natës.</desc>
+  <!-- 15 мин -->
+  <programme start="20260206000000 +0000" stop="20260206001500 +0000" channel="Syri.TV.al">
+    <title lang="sq">Lajmet e Natës</title>
+    <desc lang="sq">Përshkrim i shkurtër.</desc>
     <category lang="sq">Lajme</category>
   </programme>
-
-  <programme start="20260206080000 +0000" stop="20260206160000 +0000" channel="Syri.TV.al">
-    <title lang="sq">DituritëEVeçantaPaHapësiraDheMeEmoji📺🔥🎬</title>
-    <desc lang="sq"></desc> <!-- Пустое описание -->
-    <category lang="sq">Test</category>
+  <!-- 3 часа -->
+  <programme start="20260206001500 +0000" stop="20260206031500 +0000" channel="Syri.TV.al">
+    <title lang="sq">Filmi i Natës</title>
+    <desc lang="sq">Transmetim i filmit klasik.</desc>
+    <category lang="sq">Film</category>
   </programme>
-
-  <programme start="20260206160000 +0000" stop="20260207000000 +0000" channel="Syri.TV.al">
-    <title lang="sq">Studio e Mbrëmjes</title>
-    <desc lang="sq">Debat me ekspertë mbi çështjet aktuale. Текст с русскими символами и emoji: 👨‍💻🌍✅ &lt;HTML&gt; "кавычки" 'апостроф'.</desc>
+  <!-- 6 часов -->
+  <programme start="20260206031500 +0000" stop="20260206091500 +0000" channel="Syri.TV.al">
+    <title lang="sq">Dituritë pa Fund</title>
+    <desc lang="sq">Emision edukativ me gjestet e ditës.</desc>
+    <category lang="sq">Edukim</category>
+  </programme>
+  <!-- Остальное время — заполним до 24:00 -->
+  <programme start="20260206091500 +0000" stop="20260207000000 +0000" channel="Syri.TV.al">
+    <title lang="sq">Studio e Ditës</title>
+    <desc lang="sq">Debat aktuale.</desc>
     <category lang="sq">Debat</category>
   </programme>
 
@@ -29,58 +37,111 @@
   <!-- === КАНАЛ: Беларусь 1 (UTC+3) === -->
   <channel id="Belarus1.by">
     <display-name lang="ru">Беларусь 1</display-name>
+    <display-name lang="be">Беларусь 1</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Belarus_1_logo.svg/742px-Belarus_1_logo.svg.png"/>
+    <url>https://www.tvr.by</url>
   </channel>
 
-  <programme start="20260206000000 +0300" stop="20260206080000 +0300" channel="Belarus1.by">
-    <title lang="ru">Ночное эфирное время</title>
-    <desc lang="ru">Повтор лучших передач дня.</desc>
-    <category lang="ru">Повтор</category>
-  </programme>
-
-  <programme start="20260206080000 +0300" stop="20260206160000 +0300" channel="Belarus1.by">
-    <title lang="ru">ДлинноеСловоБезПробеловИСЭмодзи🎬📺🔥</title>
-    <desc lang="ru"></desc>
-    <category lang="ru">Тест</category>
-  </programme>
-
-  <programme start="20260206160000 +0300" stop="20260207000000 +0300" channel="Belarus1.by">
-    <title lang="ru">Вечерний выпуск</title>
-    <desc lang="ru">Очень длинное описание... (полная версия из предыдущего ответа — вставь её здесь целиком).</desc>
-    <category lang="ru">Новости</category>
-    <rating><value>0+</value></rating>
-  </programme>
-
-
-  <!-- === КАНАЛ: СТВ (UTC+3) === -->
-  <channel id="STV.by">
-    <display-name lang="ru">СТВ</display-name>
-    <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg/640px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg.png"/>
-  </channel>
-
-  <programme start="20260206000000 +0300" stop="20260206080000 +0300" channel="STV.by">
-    <title lang="ru">Утренний эфир</title>
-    <desc lang="ru">Новости, погода, аналитика.</desc>
+  <!-- 9 часов -->
+  <programme start="20260206000000 +0300" stop="20260206090000 +0300" channel="Belarus1.by">
+    <title lang="ru">Утро.День.Вечер</title>
+    <desc lang="ru">Марафон информационных программ.</desc>
     <category lang="ru">Информация</category>
   </programme>
+  <!-- 10 часов -->
+  <programme start="20260206090000 +0300" stop="20260206190000 +0300" channel="Belarus1.by">
+    <title lang="ru">Киномарафон</title>
+    <desc lang="ru">Лучшие фильмы недели.</desc>
+    <category lang="ru">Фильм</category>
+  </programme>
+  <!-- 5 часов -->
+  <programme start="20260206190000 +0300" stop="20260207000000 +0300" channel="Belarus1.by">
+    <title lang="be">Вечерняя Беларусь</title>
+    <desc lang="be">Галоўныя навіны і аналітыка.</desc>
+    <category lang="be">Навіны</category>
+  </programme>
 
-  <programme start="20260206080000 +0300" stop="20260206160000 +0300" channel="STV.by">
-    <title lang="ru">ОченьДлинноеНазваниеБезПробеловИСЭмодзи📺🔥</title>
-    <desc lang="ru"></desc>
+
+  <!-- === КАНАЛ: СТВ — ПОЛНОЕ ПОКРЫТИЕ ВСЕХ ПОЛЕЙ (UTC+3) === -->
+  <channel id="STV.by">
+    <display-name lang="ru">СТВ</display-name>
+    <display-name lang="be">СТВ</display-name>
+    <display-name lang="en">CTV Belarus</display-name>
+    <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg/640px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg.png"/>
+    <url>https://www.ctv.by</url>
+  </channel>
+
+  <!-- 10 часов -->
+  <programme start="20260206000000 +0300" stop="20260206100000 +0300" channel="STV.by">
+    <title lang="ru">Утро на СТВ</title>
+    <sub-title lang="ru">Информационно-развлекательное шоу</sub-title>
+    <desc lang="ru">Новости, погода, интервью, музыка.</desc>
+    <category lang="ru">Шоу</category>
+    <category lang="en">Morning Show</category>
+    <country>BY</country>
+    <language>ru</language>
+    <rating><value>0+</value></rating>
+    <star-rating><value>4.5/5</value></star-rating>
+    <icon src="https://example.com/stv-morning.jpg"/>
+  </programme>
+
+  <!-- 3 часа -->
+  <programme start="20260206100000 +0300" stop="20260206130000 +0300" channel="STV.by">
+    <title lang="ru">Документальный сериал</title>
+    <sub-title lang="ru">Тайны древней Беларуси</sub-title>
+    <desc lang="ru">Эпизод о Полоцком княжестве.</desc>
+    <category lang="ru">Документалистика</category>
+    <episode-num system="onscreen">S02E05</episode-num>
+    <episode-num system="xmltv_ns">1.4.</episode-num>
+    <previously-shown start="20260130100000 +0300"/>
+    <video>
+      <aspect>16:9</aspect>
+      <quality>HD</quality>
+    </video>
+  </programme>
+
+  <!-- 3 часа -->
+  <programme start="20260206130000 +0300" stop="20260206160000 +0300" channel="STV.by">
+    <title lang="ru">ОченьДлинноеНазваниеБезПробеловИСЭмодзи📺🔥🎬</title>
+    <desc lang="ru"></desc> <!-- Пустое описание -->
     <category lang="ru">Тест</category>
   </programme>
 
-  <programme start="20260206160000 +0300" stop="20260207000000 +0300" channel="STV.by">
-    <title lang="ru">Вечерний фильм</title>
-    <sub-title lang="ru">Премьера недели</sub-title>
-    <desc lang="ru">Полное длинное описание с HTML, кавычками, эмодзи и т.д. (вставь полную версию).</desc>
-    <category lang="ru">Фильм</category>
+  <!-- 3 часа -->
+  <programme start="20260206160000 +0300" stop="20260206190000 +0300" channel="STV.by">
+    <title lang="ru">Спецвыпуск</title>
+    <desc lang="ru">Это очень длинное описание... [ВСТАВЬ ПОЛНЫЙ ТЕКСТ С ЭМОДЗИ, КАВЫЧКАМИ, HTML И Т.Д.]</desc>
+    <category lang="ru">Спецпроект</category>
+    <language>be</language>
     <country>BY</country>
-    <language>ru</language>
     <rating><value>12+</value></rating>
-    <episode-num system="onscreen">S01E01</episode-num>
   </programme>
 
-  <!-- ❌ Несуществующие ID (Syri.al, WRONG.*) — намеренно отсутствуют -->
+  <!-- 3 часа -->
+  <programme start="20260206190000 +0300" stop="20260206220000 +0300" channel="STV.by">
+    <title lang="ru">Вечерний фильм</title>
+    <sub-title lang="ru">Премьера</sub-title>
+    <desc lang="ru">Новый белорусский фильм.</desc>
+    <category lang="ru">Фильм</category>
+    <audio>
+      <stereo>stereo</stereo>
+    </audio>
+  </programme>
+
+  <!-- 3 часа -->
+  <programme start="20260206220000 +0300" stop="20260207010000 +0300" channel="STV.by">
+    <title lang="ru">Ночное ретро</title>
+    <desc lang="ru">Классика советского кино.</desc>
+    <category lang="ru">Ретро</category>
+  </programme>
+
+  <!-- Закрываем до 24:00 -->
+  <programme start="20260207010000 +0300" stop="20260207000000 +0300" channel="STV.by">
+    <title lang="ru">Тестовая передача</title>
+    <desc lang="ru">Заполнитель.</desc>
+    <category lang="ru">Тест</category>
+  </programme>
+
+  <!-- === НАМЕРЕННО ОПУЩЕНЫ: Syri.al, WRONG.Belarus1, WRONG.STV === -->
 
 </tv>
