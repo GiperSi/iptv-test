@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="IPTV Test EPG Generator" generator-info-url="https://github.com/gipersi/iptv-test">
+
+  <!-- Канал: 21 Junior -->
+  <channel id="21.Junior.al">
+    <display-name lang="sq">21 Junior</display-name>
+    <icon src="https://vimg.ipko.tv/logo/color/21junior.png"/>
+  </channel>
+
+  <!-- Канал: Test News -->
+  <channel id="TestNews.al">
+    <display-name lang="en">Test News</display-name>
+    <icon src="https://i.imgur.com/rL2v9pM.png"/>
+  </channel>
+
+  <!-- Канал: Test Music -->
+  <channel id="TestMusic.al">
+    <display-name lang="en">Test Music</display-name>
+    <icon src="https://i.imgur.com/JdKxscs.png"/>
+  </channel>
+
+  <!-- Программа для 21 Junior -->
+  <programme start="20260206050000 +0000" stop="20260206060000 +0000" channel="21.Junior.al">
+    <title lang="sq">21 Junior</title>
+    <desc lang="sq">Kanali i parë televiziv kosovar dedikuar fëmijëve 24/7.</desc>
+    <category lang="sq">Serial</category>
+    <icon src="https://vimg.ipko.tv/mtcms/16/d/d/16dd501d-e372-4dcb-92f5-5bfeb42bb785.jpg"/>
+  </programme>
+
+  <!-- Программа для Test News -->
+  <programme start="20260206050000 +0000" stop="20260206060000 +0000" channel="TestNews.al">
+    <title lang="en">Morning News</title>
+    <desc lang="en">Daily news update from around the world.</desc>
+    <category lang="en">News</category>
+  </programme>
+
+  <!-- Программа для Test Music -->
+  <programme start="20260206050000 +0000" stop="20260206060000 +0000" channel="TestMusic.al">
+    <title lang="en">Chill Vibes</title>
+    <desc lang="en">Relaxing music for your morning.</desc>
+    <category lang="en">Music</category>
+  </programme>
+
+</tv>
