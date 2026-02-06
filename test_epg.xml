@@ -1,35 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tv generator-info-name="IPTV Test Suite" generator-info-url="https://github.com/gipersi/iptv-test">
+<tv generator-info-name="IPTV Test Suite for UI Validation" generator-info-url="https://github.com/gipersi/iptv-test">
 
-  <!-- ✅ ЕДИНСТВЕННЫЙ ВАЛИДНЫЙ КАНАЛ -->
+  <!-- === КАНАЛ: Syri TV (Albania) === -->
   <channel id="Syri.TV.al">
     <display-name lang="sq">Syri TV</display-name>
     <icon src="https://vimg.ipko.tv/logo/color/syritv.png"/>
     <url>http://www.ipko.com</url>
   </channel>
 
-  <!-- Программа: утро -->
   <programme start="20260206090000 +0000" stop="20260206110000 +0000" channel="Syri.TV.al">
     <title lang="sq">Edicioni i paradites</title>
-    <desc lang="sq">Edicion informativ dhe lidhje LIVE me korespondentët, nën moderimin e Eneida Ndocit.</desc>
+    <desc lang="sq">Edicion informativ dhe lidhje LIVE me korespondentët.</desc>
     <category lang="sq">Program Informues</category>
-    <icon src="https://vimg.ipko.tv/mtcms/c1/6/c/c16c7939-674d-4385-9771-b3ac081ceb7b.jpg"/>
   </programme>
 
-  <!-- Программа: день -->
   <programme start="20260206110000 +0000" stop="20260206130000 +0000" channel="Syri.TV.al">
     <title lang="sq">Lajmet e dites</title>
     <desc lang="sq">Përshkrim i ngjarjeve të ditës në Shqipëri dhe botë.</desc>
     <category lang="sq">Lajme</category>
   </programme>
 
-  <!-- Программа: вечер (в будущем) -->
-  <programme start="20260206190000 +0000" stop="20260206210000 +0000" channel="Syri.TV.al">
-    <title lang="sq">Studio e Mbrëmjes</title>
-    <desc lang="sq">Debat me ekspertë mbi çështjet aktuale.</desc>
-    <category lang="sq">Debat</category>
+  <!-- === КАНАЛ: Беларусь 1 (Belarus) === -->
+  <channel id="Belarus1.by">
+    <display-name lang="be">Беларусь 1</display-name>
+    <display-name lang="ru">Беларусь 1</display-name>
+    <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Belarus_1_logo.svg/742px-Belarus_1_logo.svg.png"/>
+    <url>https://www.tvr.by</url>
+  </channel>
+
+  <!-- ДЕНЬ 1 -->
+  <programme start="20260206060000 +0300" stop="20260206070000 +0300" channel="Belarus1.by">
+    <title lang="ru">Утро Беларуси</title>
+    <desc lang="ru">Информационно-аналитическая программа.</desc>
+    <category lang="ru">Новости</category>
   </programme>
 
-  <!-- ❌ НЕТ КАНАЛА С ID="Syri.al" — специально пропущен для теста! -->
+  <programme start="20260206070000 +0300" stop="20260206080000 +0300" channel="Belarus1.by">
+    <title lang="ru">ДлинноеСловоБезПробеловИОченьДлинноеЧтобыПроверитьКакЭтоОбрабатываетсяВИнтерфейсеПотомучтоЭтоВажно</title>
+    <desc lang="ru"></desc>
+    <category lang="ru">Тест</category>
+  </programme>
+
+  <programme start="20260206080000 +0300" stop="20260206090000 +0300" channel="Belarus1.by">
+    <title lang="ru">Спецвыпуск с эмодзи 📺🔥</title>
+    <desc lang="ru">Тест с &lt;HTML&gt;, "кавычками", emoji: 👨‍💻🌍✅</desc>
+    <category lang="ru">Развлечение</category>
+  </programme>
+
+  <!-- ОШИБКА: stop < start -->
+  <programme start="20260206093000 +0300" stop="20260206090000 +0300" channel="Belarus1.by">
+    <title lang="ru">[ОШИБКА] Неверное время</title>
+    <desc lang="ru">Stop раньше Start — должен игнорироваться.</desc>
+    <category lang="ru">Ошибка</category>
+  </programme>
+
+  <!-- ДЕНЬ 2 -->
+  <programme start="20260207180000 +0300" stop="20260207190000 +0300" channel="Belarus1.by">
+    <title lang="be">Вечерняя Беларусь</title>
+    <desc lang="be">Галоўныя навіны дня.</desc>
+    <category lang="be">Навіны</category>
+  </programme>
+
+  <!-- ❌ НЕТ КАНАЛОВ С ID "Syri.al" и "WRONG.Belarus1" — специально пропущены для теста! -->
 
 </tv>

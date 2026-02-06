@@ -1,13 +1,26 @@
 #EXTM3U x-tvg-url="https://gipersi.github.io/iptv-test/test_epg.xml"
 
+# === ✅ ГРУППА: Albania ===
+
 # ✅ ПРАВИЛЬНЫЙ КАНАЛ
 #EXTINF:-1 tvg-id="Syri.TV.al" tvg-name="Syri TV" tvg-logo="https://vimg.ipko.tv/logo/color/syritv.png" group-title="Albania",Syri TV
 https://stream.syritv.al/SyriTV/index.m3u8
 
-# ❌ НЕКОРРЕКТНЫЙ 1: несовпадение tvg-id (в M3U указан Syri.al, но в EPG такого канала нет)
+# ❌ НЕПРАВИЛЬНЫЙ ID
 #EXTINF:-1 tvg-id="Syri.al" tvg-name="Syri TV [ТЕСТ: НЕПРАВИЛЬНЫЙ ID]" tvg-logo="https://i.imgur.com/4zVyj1M.png" group-title="Albania",Syri TV [ТЕСТ: НЕПРАВИЛЬНЫЙ ID]
 https://stream.syritv.al/SyriTV/index.m3u8
 
-# ❌ НЕКОРРЕКТНЫЙ 2: дублирование, но с битым описанием и временем в прошлом
+# ❌ БИТЫЙ ТЕКСТ И ВРЕМЯ
 #EXTINF:-1 tvg-id="Syri.TV.al" tvg-name="Syri TV [ТЕСТ: БИТЫЙ ТЕКСТ И ВРЕМЯ]" tvg-logo="https://vimg.ipko.tv/logo/color/syritv.png" group-title="Albania",Syri TV [ТЕСТ: БИТЫЙ ТЕКСТ И ВРЕМЯ]
 https://stream.syritv.al/SyriTV/index.m3u8
+
+
+# === ✅ ГРУППА: Belarus ===
+
+# ✅ ПРАВИЛЬНЫЙ КАНАЛ
+#EXTINF:-1 tvg-id="Belarus1.by" tvg-name="Беларусь 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Belarus_1_logo.svg/742px-Belarus_1_logo.svg.png" group-title="Belarus",Беларусь 1
+https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus1.smil/playlist.m3u8
+
+# ❌ НЕПРАВИЛЬНЫЙ ID
+#EXTINF:-1 tvg-id="WRONG.Belarus1" tvg-name="Беларусь 1 [ТЕСТ: НЕПРАВИЛЬНЫЙ ID]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Belarus_1_logo.svg/742px-Belarus_1_logo.svg.png" group-title="Belarus",Беларусь 1 [ТЕСТ: НЕПРАВИЛЬНЫЙ ID]
+https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus1.smil/playlist.m3u8
