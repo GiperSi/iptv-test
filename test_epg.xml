@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tv generator-info-name="IPTV Test Suite — Full Field Coverage & Time Variants" generator-info-url="https://github.com/gipersi/iptv-test">
+<tv generator-info-name="IPTV Test Suite — Full Coverage + Varied Schedule" generator-info-url="https://github.com/gipersi/iptv-test">
 
   <!-- === КАНАЛ: Syri TV (UTC) === -->
   <channel id="Syri.TV.al">
@@ -8,28 +8,22 @@
     <url>http://www.ipko.com</url>
   </channel>
 
-  <!-- 15 мин -->
-  <programme start="20260206000000 +0000" stop="20260206001500 +0000" channel="Syri.TV.al">
-    <title lang="sq">Lajmet e Natës</title>
-    <desc lang="sq">Përshkrim i shkurtër.</desc>
+  <!-- 15h -->
+  <programme start="20260206000000 +0000" stop="20260206150000 +0000" channel="Syri.TV.al">
+    <title lang="sq">Transmetimi i Natës</title>
+    <desc lang="sq">Lajme të natës dhe analiza.</desc>
     <category lang="sq">Lajme</category>
   </programme>
-  <!-- 3 часа -->
-  <programme start="20260206001500 +0000" stop="20260206031500 +0000" channel="Syri.TV.al">
-    <title lang="sq">Filmi i Natës</title>
-    <desc lang="sq">Transmetim i filmit klasik.</desc>
-    <category lang="sq">Film</category>
+  <!-- 3h -->
+  <programme start="20260206150000 +0000" stop="20260206180000 +0000" channel="Syri.TV.al">
+    <title lang="sq">DituritëEVeçantaPaHapësiraDheMeEmoji📺🔥🎬</title>
+    <desc lang="sq"></desc>
+    <category lang="sq">Test</category>
   </programme>
-  <!-- 6 часов -->
-  <programme start="20260206031500 +0000" stop="20260206091500 +0000" channel="Syri.TV.al">
-    <title lang="sq">Dituritë pa Fund</title>
-    <desc lang="sq">Emision edukativ me gjestet e ditës.</desc>
-    <category lang="sq">Edukim</category>
-  </programme>
-  <!-- Остальное время — заполним до 24:00 -->
-  <programme start="20260206091500 +0000" stop="20260207000000 +0000" channel="Syri.TV.al">
-    <title lang="sq">Studio e Ditës</title>
-    <desc lang="sq">Debat aktuale.</desc>
+  <!-- 6h -->
+  <programme start="20260206180000 +0000" stop="20260207000000 +0000" channel="Syri.TV.al">
+    <title lang="sq">Studio e Mbrëmjes</title>
+    <desc lang="sq">Debat me ekspertë mbi çështjet aktuale. Текст с русскими символами и emoji: 👨‍💻🌍✅ &lt;HTML&gt; "кавычки" 'апостроф'.</desc>
     <category lang="sq">Debat</category>
   </programme>
 
@@ -42,27 +36,31 @@
     <url>https://www.tvr.by</url>
   </channel>
 
-  <!-- 9 часов -->
+  <!-- 9h -->
   <programme start="20260206000000 +0300" stop="20260206090000 +0300" channel="Belarus1.by">
-    <title lang="ru">Утро.День.Вечер</title>
-    <desc lang="ru">Марафон информационных программ.</desc>
+    <title lang="ru">Утренний эфир</title>
+    <desc lang="ru">Новости, погода, интервью.</desc>
     <category lang="ru">Информация</category>
+    <language>ru</language>
+    <country>BY</country>
   </programme>
-  <!-- 10 часов -->
+  <!-- 10h -->
   <programme start="20260206090000 +0300" stop="20260206190000 +0300" channel="Belarus1.by">
-    <title lang="ru">Киномарафон</title>
-    <desc lang="ru">Лучшие фильмы недели.</desc>
-    <category lang="ru">Фильм</category>
+    <title lang="ru">Дневной марафон</title>
+    <desc lang="ru">Это очень длинное описание, предназначенное для проверки того, как пользовательский интерфейс обрабатывает многострочные тексты, автоматическое сворачивание, наличие кнопок "Подробнее", переносы строк, обрезку и другие аспекты отображения большого объёма текстовой информации в ограниченном пространстве виджета программы передач. Текст может содержать специальные символы: &amp;, &lt;, &gt;, кавычки " и ', а также эмодзи: 👨‍💻🌍✅. Это важно для обеспечения корректной работы приложения на разных устройствах и разрешениях экрана.</desc>
+    <category lang="ru">Марафон</category>
+    <rating><value>0+</value></rating>
+    <star-rating><value>4.5/5</value></star-rating>
   </programme>
-  <!-- 5 часов -->
+  <!-- 5h -->
   <programme start="20260206190000 +0300" stop="20260207000000 +0300" channel="Belarus1.by">
     <title lang="be">Вечерняя Беларусь</title>
-    <desc lang="be">Галоўныя навіны і аналітыка.</desc>
+    <desc lang="be">Галоўныя навіны і аналітыка дня.</desc>
     <category lang="be">Навіны</category>
   </programme>
 
 
-  <!-- === КАНАЛ: СТВ — ПОЛНОЕ ПОКРЫТИЕ ВСЕХ ПОЛЕЙ (UTC+3) === -->
+  <!-- === КАНАЛ: СТВ (UTC+3) — ПОЛНОЕ ПОКРЫТИЕ ВСЕХ ПОЛЕЙ === -->
   <channel id="STV.by">
     <display-name lang="ru">СТВ</display-name>
     <display-name lang="be">СТВ</display-name>
@@ -71,77 +69,57 @@
     <url>https://www.ctv.by</url>
   </channel>
 
-  <!-- 10 часов -->
+  <!-- 10h -->
   <programme start="20260206000000 +0300" stop="20260206100000 +0300" channel="STV.by">
     <title lang="ru">Утро на СТВ</title>
     <sub-title lang="ru">Информационно-развлекательное шоу</sub-title>
     <desc lang="ru">Новости, погода, интервью, музыка.</desc>
     <category lang="ru">Шоу</category>
-    <category lang="en">Morning Show</category>
-    <country>BY</country>
     <language>ru</language>
+    <country>BY</country>
     <rating><value>0+</value></rating>
-    <star-rating><value>4.5/5</value></star-rating>
-    <icon src="https://example.com/stv-morning.jpg"/>
   </programme>
-
-  <!-- 3 часа -->
+  <!-- 3h -->
   <programme start="20260206100000 +0300" stop="20260206130000 +0300" channel="STV.by">
+    <title lang="ru">ОченьДлинноеНазваниеБезПробеловИСЭмодзи📺🔥</title>
+    <desc lang="ru"></desc>
+    <category lang="ru">Тест</category>
+  </programme>
+  <!-- 3h -->
+  <programme start="20260206130000 +0300" stop="20260206160000 +0300" channel="STV.by">
     <title lang="ru">Документальный сериал</title>
     <sub-title lang="ru">Тайны древней Беларуси</sub-title>
     <desc lang="ru">Эпизод о Полоцком княжестве.</desc>
     <category lang="ru">Документалистика</category>
     <episode-num system="onscreen">S02E05</episode-num>
     <episode-num system="xmltv_ns">1.4.</episode-num>
-    <previously-shown start="20260130100000 +0300"/>
-    <video>
-      <aspect>16:9</aspect>
-      <quality>HD</quality>
-    </video>
   </programme>
-
-  <!-- 3 часа -->
-  <programme start="20260206130000 +0300" stop="20260206160000 +0300" channel="STV.by">
-    <title lang="ru">ОченьДлинноеНазваниеБезПробеловИСЭмодзи📺🔥🎬</title>
-    <desc lang="ru"></desc> <!-- Пустое описание -->
-    <category lang="ru">Тест</category>
-  </programme>
-
-  <!-- 3 часа -->
+  <!-- 3h -->
   <programme start="20260206160000 +0300" stop="20260206190000 +0300" channel="STV.by">
     <title lang="ru">Спецвыпуск</title>
-    <desc lang="ru">Это очень длинное описание... [ВСТАВЬ ПОЛНЫЙ ТЕКСТ С ЭМОДЗИ, КАВЫЧКАМИ, HTML И Т.Д.]</desc>
+    <desc lang="ru">Это очень длинное описани, предназначенное для проверки того, как пользовательский интерфейс обрабатывает многострочные тексты, автоматическое сворачивание, наличие кнопок "Подробнее", переносы строк, обрезку и другие аспекты отображения большого объёма текстовой информации в ограниченном пространстве виджета программы передач. Текст может содержать специальные символы: &amp;, &lt;, &gt;, кавычки " и ', а также эмодзи: 👨‍💻🌍✅. Это важно для обеспечения корректной работы приложения на разных устройствах и разрешениях экрана.</desc>
     <category lang="ru">Спецпроект</category>
     <language>be</language>
     <country>BY</country>
     <rating><value>12+</value></rating>
+    <star-rating><value>4/5</value></star-rating>
   </programme>
-
-  <!-- 3 часа -->
+  <!-- 3h -->
   <programme start="20260206190000 +0300" stop="20260206220000 +0300" channel="STV.by">
     <title lang="ru">Вечерний фильм</title>
     <sub-title lang="ru">Премьера</sub-title>
     <desc lang="ru">Новый белорусский фильм.</desc>
     <category lang="ru">Фильм</category>
-    <audio>
-      <stereo>stereo</stereo>
-    </audio>
+    <icon src="https://example.com/stv-film.jpg"/>
   </programme>
-
-  <!-- 3 часа -->
-  <programme start="20260206220000 +0300" stop="20260207010000 +0300" channel="STV.by">
+  <!-- 2h (до 00:00) -->
+  <programme start="20260206220000 +0300" stop="20260207000000 +0300" channel="STV.by">
     <title lang="ru">Ночное ретро</title>
     <desc lang="ru">Классика советского кино.</desc>
     <category lang="ru">Ретро</category>
+    <previously-shown start="20260205220000 +0300"/>
   </programme>
 
-  <!-- Закрываем до 24:00 -->
-  <programme start="20260207010000 +0300" stop="20260207000000 +0300" channel="STV.by">
-    <title lang="ru">Тестовая передача</title>
-    <desc lang="ru">Заполнитель.</desc>
-    <category lang="ru">Тест</category>
-  </programme>
-
-  <!-- === НАМЕРЕННО ОПУЩЕНЫ: Syri.al, WRONG.Belarus1, WRONG.STV === -->
+  <!-- ❌ Несуществующие ID: Syri.al, WRONG.Belarus1, WRONG.STV — НАМЕРЕННО ОПУЩЕНЫ -->
 
 </tv>
