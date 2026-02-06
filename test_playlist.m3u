@@ -1,10 +1,13 @@
 #EXTM3U x-tvg-url="https://gipersi.github.io/iptv-test/test_epg.xml"
 
-#EXTINF:-1 tvg-id="21.Junior.al" tvg-name="21 Junior" tvg-logo="https://vimg.ipko.tv/logo/color/21junior.png" group-title="Kids",21 Junior
-https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel.ism/.m3u8
+# ✅ ПРАВИЛЬНЫЙ КАНАЛ
+#EXTINF:-1 tvg-id="Syri.TV.al" tvg-name="Syri TV" tvg-logo="https://vimg.ipko.tv/logo/color/syritv.png" group-title="Albania",Syri TV
+https://stream.syritv.al/SyriTV/index.m3u8
 
-#EXTINF:-1 tvg-id="TestNews.al" tvg-name="Test News" tvg-logo="https://i.imgur.com/rL2v9pM.png" group-title="News",Test News
-https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/playlist.m3u8
+# ❌ НЕКОРРЕКТНЫЙ 1: несовпадение tvg-id (в M3U указан Syri.al, но в EPG такого канала нет)
+#EXTINF:-1 tvg-id="Syri.al" tvg-name="Syri TV [ТЕСТ: НЕПРАВИЛЬНЫЙ ID]" tvg-logo="https://i.imgur.com/4zVyj1M.png" group-title="Albania",Syri TV [ТЕСТ: НЕПРАВИЛЬНЫЙ ID]
+https://stream.syritv.al/SyriTV/index.m3u8
 
-#EXTINF:-1 tvg-id="TestMusic.al" tvg-name="Test Music" tvg-logo="https://i.imgur.com/JdKxscs.png" group-title="Music",Test Music
-https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8
+# ❌ НЕКОРРЕКТНЫЙ 2: дублирование, но с битым описанием и временем в прошлом
+#EXTINF:-1 tvg-id="Syri.TV.al" tvg-name="Syri TV [ТЕСТ: БИТЫЙ ТЕКСТ И ВРЕМЯ]" tvg-logo="https://vimg.ipko.tv/logo/color/syritv.png" group-title="Albania",Syri TV [ТЕСТ: БИТЫЙ ТЕКСТ И ВРЕМЯ]
+https://stream.syritv.al/SyriTV/index.m3u8
