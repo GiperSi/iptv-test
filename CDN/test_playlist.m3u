@@ -1,16 +1,16 @@
-#EXTM3U x-tvg-url="https://cdn.jsdelivr.net/gh/gipersi/iptv-test@main/test_epg.xml.gz"
+#EXTM3U x-tvg-url="https://cdn.jsdelivr.net/gh/GiperSi/iptv-test@main/CDN/test_epg.xml.gz"
 # Тестовый плейлист с CDN ссылками
 # UI Тест: Группировка, длинные имена, спецсимволы
 
 # ==================== ГРУППА: ALBANIA ====================
 #EXTINF:-1 tvg-id="Syri.TV.al" tvg-logo="https://vimg.ipko.tv/logo/color/syritv.png" group-title="Albania",Syri TV (нормальный канал)
-https://cdn.jsdelivr.net/gh/gipersi/iptv-test@main/placeholder.m3u8
+https://cdn.jsdelivr.net/gh/GiperSi/iptv-test@main/CDN/placeholder.m3u8
 
 #EXTINF:-1 tvg-id="Syri.TV.al" tvg-name="📺🔥🎬SyriTVОченьДлинноеИмяБезПробеловИСЭмодзи📺🔥🎬" group-title="Albania",📺🔥🎬SyriTVОченьДлинноеИмяБезПробеловИСЭмодзи📺🔥🎬
-https://cdn.jsdelivr.net/gh/gipersi/iptv-test@main/placeholder.m3u8
+https://cdn.jsdelivr.net/gh/GiperSi/iptv-test@main/CDN/placeholder.m3u8
 
 #EXTINF:-1 tvg-id="Test.Channel" tvg-name="Канал с <b>HTML</b> & "кавычками" 'апострофами'" group-title="Albania",Канал с <b>HTML</b> & "кавычками" 'апострофами'
-https://cdn.jsdelivr.net/gh/gipersi/iptv-test@main/placeholder.m3u8
+https://cdn.jsdelivr.net/gh/GiperSi/iptv-test@main/CDN/placeholder.m3u8
 
 # ==================== ГРУППА: BELARUS ====================
 #EXTINF:-1 tvg-id="Belarus1.by" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Belarus_1_logo.svg/742px-Belarus_1_logo.svg.png" group-title="Belarus",Беларусь 1 (рабочий поток)
@@ -24,13 +24,13 @@ https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus1.smil/playlist.m3u8
 
 # ==================== ГРУППА: TEST ERRORS ====================
 #EXTINF:-1 tvg-id="No.EPG" tvg-name="Канал без программы" group-title="TEST ERRORS",Канал без программы (нет в EPG)
-https://cdn.jsdelivr.net/gh/gipersi/iptv-test@main/placeholder.m3u8
+https://cdn.jsdelivr.net/gh/GiperSi/iptv-test@main/CDN/placeholder.m3u8
 
 #EXTINF:-1 tvg-name="Канал без TVG-ID" group-title="TEST ERRORS",Канал без TVG-ID (не привяжется EPG)
-https://cdn.jsdelivr.net/gh/gipersi/iptv-test@main/placeholder.m3u8
+https://cdn.jsdelivr.net/gh/GiperSi/iptv-test@main/CDN/placeholder.m3u8
 
 #EXTINF:-1 tvg-id="Duplicate.ID" group-title="TEST ERRORS",Канал 1 (дубликат ID)
-https://cdn.jsdelivr.net/gh/gipersi/iptv-test@main/placeholder.m3u8
+https://cdn.jsdelivr.net/gh/GiperSi/iptv-test@main/CDN/placeholder.m3u8
 
 #EXTINF:-1 tvg-id="Duplicate.ID" group-title="TEST ERRORS",Канал 2 (дубликат ID)
-https://cdn.jsdelivr.net/gh/gipersi/iptv-test@main/placeholder.m3u8
+https://cdn.jsdelivr.net/gh/GiperSi/iptv-test@main/CDN/placeholder.m3u8
