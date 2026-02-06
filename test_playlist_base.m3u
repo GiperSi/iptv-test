@@ -1,0 +1,32 @@
+#EXTM3U x-tvg-url="https://gipersi.github.io/iptv-test/test_epg_base.xml"
+# ТЕСТОВЫЙ ПЛЕЙЛИСТ ДЛЯ ПРОВЕРКИ UI
+# Белорусские каналы - рабочие потоки
+# Албанские каналы - тестовые (для проверки отображения)
+
+# ======================= ГРУППА: ALBANIA =======================
+#EXTINF:-1 tvg-id="Syri.TV.al" tvg-logo="https://vimg.ipko.tv/logo/color/syritv.png" group-title="Albania",Syri TV (нормальный)
+http://example.com/albania1.m3u8
+
+#EXTINF:-1 tvg-id="Syri.TV.al" tvg-name="📺🔥🎬SyriTVОченьДлинноеИмяБезПробеловИСЭмодзи📺🔥🎬📺🔥🎬" group-title="Albania",📺🔥🎬SyriTVОченьДлинноеИмяБезПробеловИСЭмодзи📺🔥🎬📺🔥🎬
+http://example.com/albania2.m3u8
+
+#EXTINF:-1 tvg-id="Test.Channel" tvg-name="Канал с <HTML> тегами & "кавычками"'апострофами'" group-title="Albania",Канал с <HTML> тегами & "кавычками"'апострофами'
+http://example.com/albania3.m3u8
+
+# ======================= ГРУППА: BELARUS =======================
+# Рабочие белорусские потоки
+#EXTINF:-1 tvg-id="Belarus1.by" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Belarus_1_logo.svg/742px-Belarus_1_logo.svg.png" group-title="Belarus",Беларусь 1 (рабочий)
+https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus1.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="STV.by" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg/640px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg.png" tvg-chno="3" group-title="Belarus",СТВ (рабочий)
+https://ctv.dc.beltelecom.by/ctv/ctv.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Belarus1.by" tvg-name="авыаывдвплщавоплщвопавлпоывалпаволдыжвоавлыаоавылдаволовладпоавлдпоавлпавоплдыопалпоавлпоавплдавыоплаыопадвлпоавылпоаплавоплавопавлпоавдлпоалпаоплвопавлпоыплавопжопалжпоавлпжы" group-title="Belarus",Беларусь 1 (длинное имя без пробелов)
+https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus1.smil/playlist.m3u8
+
+# ======================= ГРУППА: TEST ERRORS =======================
+#EXTINF:-1 tvg-id="No.EPG" tvg-name="Канал без EPG" group-title="TEST ERRORS",Канал без программы (нет в EPG)
+http://example.com/noepg.m3u8
+
+#EXTINF:-1 tvg-name="Канал без tvg-id" group-title="TEST ERRORS",Канал без tvg-id (не привяжется программа)
+http://example.com/noid.m3u8
