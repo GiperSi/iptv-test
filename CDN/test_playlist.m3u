@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://cdn.jsdelivr.net/gh/GiperSi/iptv-test@main/CDN/test_epg.xml.gz"
+#EXTM3U x-tvg-url="https://cdn.jsdelivr.net/gh/GiperSi/iptv-test@main/CDN/test_epg.xml"
 # Тестовый плейлист с CDN ссылками
 # UI Тест: Группировка, длинные имена, спецсимволы
 
