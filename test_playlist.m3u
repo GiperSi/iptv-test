@@ -1,26 +1,23 @@
 #EXTM3U x-tvg-url="https://gipersi.github.io/iptv-test/test_epg.xml"
 
-# === ✅ ГРУППА: Albania ===
-
-# ✅ ПРАВИЛЬНЫЙ КАНАЛ
+# === ГРУППА: Albania ===
 #EXTINF:-1 tvg-id="Syri.TV.al" tvg-name="Syri TV" tvg-logo="https://vimg.ipko.tv/logo/color/syritv.png" group-title="Albania",Syri TV
 https://stream.syritv.al/SyriTV/index.m3u8
-
-# ❌ НЕПРАВИЛЬНЫЙ ID
 #EXTINF:-1 tvg-id="Syri.al" tvg-name="Syri TV [ТЕСТ: НЕПРАВИЛЬНЫЙ ID]" tvg-logo="https://i.imgur.com/4zVyj1M.png" group-title="Albania",Syri TV [ТЕСТ: НЕПРАВИЛЬНЫЙ ID]
 https://stream.syritv.al/SyriTV/index.m3u8
-
-# ❌ БИТЫЙ ТЕКСТ И ВРЕМЯ
 #EXTINF:-1 tvg-id="Syri.TV.al" tvg-name="Syri TV [ТЕСТ: БИТЫЙ ТЕКСТ И ВРЕМЯ]" tvg-logo="https://vimg.ipko.tv/logo/color/syritv.png" group-title="Albania",Syri TV [ТЕСТ: БИТЫЙ ТЕКСТ И ВРЕМЯ]
 https://stream.syritv.al/SyriTV/index.m3u8
 
-
-# === ✅ ГРУППА: Belarus ===
-
-# ✅ ПРАВИЛЬНЫЙ КАНАЛ
+# === ГРУППА: Belarus (Беларусь 1) ===
 #EXTINF:-1 tvg-id="Belarus1.by" tvg-name="Беларусь 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Belarus_1_logo.svg/742px-Belarus_1_logo.svg.png" group-title="Belarus",Беларусь 1
 https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus1.smil/playlist.m3u8
-
-# ❌ НЕПРАВИЛЬНЫЙ ID
 #EXTINF:-1 tvg-id="WRONG.Belarus1" tvg-name="Беларусь 1 [ТЕСТ: НЕПРАВИЛЬНЫЙ ID]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Belarus_1_logo.svg/742px-Belarus_1_logo.svg.png" group-title="Belarus",Беларусь 1 [ТЕСТ: НЕПРАВИЛЬНЫЙ ID]
 https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus1.smil/playlist.m3u8
+
+# === ГРУППА: Belarus (СТВ) ===
+#EXTINF:-1 tvg-id="STV.by" tvg-name="СТВ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg/640px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg.png" tvg-chno="3" group-title="Belarus",СТВ
+https://ctv.dc.beltelecom.by/ctv/ctv.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="WRONG.STV" tvg-name="СТВ [ТЕСТ: НЕПРАВИЛЬНЫЙ ID]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/...svg.png" group-title="Belarus",СТВ [ТЕСТ: НЕПРАВИЛЬНЫЙ ID]
+https://ctv.dc.beltelecom.by/ctv/ctv.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="STV.by" tvg-name="СТВ [ТЕСТ: RADIO MODE]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/...svg.png" group-title="Belarus" radio="true",СТВ [ТЕСТ: RADIO MODE]
+https://ctv.dc.beltelecom.by/ctv/ctv.stream/playlist.m3u8
